@@ -10,6 +10,7 @@ The codes are based on [CBN](https://github.com/automan000/Camera-based-Person-R
 **Highlights:**
 1. In direct transfer evaluation, we achieve 38.5% rank-1 accuracy on MSMT17 and 79.0% on Market-1501 using our unreal data. 
 2. In unsupervised domain adaptation, we achieve 68.2% rank-1 accuracy on MSMT17 and 93.0% on Market-1501 using our unreal data. 
+3. We obtain a better pre-trained ReID model with our unreal data.  
 
 ## Demonstration
 
@@ -177,5 +178,5 @@ More details can be seen in [JVTC](https://github.com/ljn114514/JVTC).
 If you find our work useful, please kindly cite:
 
 
-If you have any questions about the data or paper, please contact me: 
+If you have any questions about the data or paper, please leave an issue or contact me: 
 zhangtianyu@buaa.edu.cn

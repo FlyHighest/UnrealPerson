@@ -14,6 +14,7 @@ import sys
 import argparse
 from tqdm import tqdm,trange
 import time
+from getpass import getuser
 
 parser = argparse.ArgumentParser(description='Training')
 parser.add_argument('--gpu_ids',default='0', type=str,help='gpu_ids: e.g. 0  0,1,2  0,2')
@@ -51,7 +52,7 @@ tar_annfile = 'list_{}/list_{}_train.txt'.format(opt.tar,opt.tar)
 tar_annfile_test = 'list_{}/list_{}_test.txt'.format(opt.tar,opt.tar)
 
 #resnet50: https://download.pytorch.org/models/resnet50-19c8e357.pth
-imageNet_pretrain = '~/.torch/models/resnet50-19c8e357.pth'
+imageNet_pretrain = '/home/'+getuser()+'/.torch/models/resnet50-19c8e357.pth'
 
 
 train_dataset = imgdataset(dataset_dir=src_dir, txt_path=src_annfile, transformer='train')
