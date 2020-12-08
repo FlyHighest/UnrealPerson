@@ -1,6 +1,6 @@
 # UnrealPerson: An Adaptive Pipeline for Costless Person Re-identification
 In our paper ([arxiv]()), we propose a novel pipeline, UnrealPerson, that decreases the costs in both the training and deployment stages of person ReID. 
-We use synthesized data in mutiple ReID tasks, including (i) Direct transfer, (ii) Unsupervised domain adaptation, and (iii) Supervised fine-tuning. 
+We develop an automatic data synthesis toolkit and use synthesized data in mutiple ReID tasks, including (i) Direct transfer, (ii) Unsupervised domain adaptation, and (iii) Supervised fine-tuning. 
  
 The repo contains the **synthesized** **data** we use in the paper and presents examples of how to use synthesized data in various down-stream tasks to boost the ReID performance.
 
@@ -19,9 +19,9 @@ The codes are based on [CBN](https://github.com/automan000/Camera-based-Person-R
 
 Our synthesized data (named Unreal in the paper) is generated with Makehuman, Mixamo, and UnrealEngine 4. We provide 1.2M images of 4.8K identities, captured from 4 unreal environments. 
 
-Google Drive: [Download Link]()
+Beihang Netdisk: [Download Link](https://bhpan.buaa.edu.cn:443/link/BD6502DF5A2A2434BC5FC62793F80F96) valid until: 2024-01-01
 
-BaiduPan: [Download Link]()
+BaiduPan: [Download Link](https://pan.baidu.com/s/1P_UKdhmuDvJNQHuO81ifww) password: abcd
 
 The image path is formulated as: unreal_v{X}.{Y}/images/{P}\_c{D}_{F}.jpg,
  for example, unreal_v3.1/images/333_c001_78.jpg.
@@ -43,7 +43,7 @@ We use Camera-based Batch Normalization baseline for direct transfer and supervi
   
 **1. Clone this repo and change directory to CBN**
 ```bash
-git clone https://
+git clone https://github.com/FlyHighest/UnrealPerson.git
 cd UnrealPerson/CBN
 ```
 
@@ -92,7 +92,7 @@ CUDA_DEVICE_ORDER=PCI_BUS_ID CUDA_VISIBLE_DEVICES=0,1 \
 python train_model.py train --trainset_name unreal --datasets='unreal_v1.1,unreal_v2.1,unreal_v3.1,unreal_v4.1,unreal_v1.2,unreal_v2.2,unreal_v3.2,unreal_v4.2,unreal_v1.3,unreal_v2.3,unreal_v3.3,unreal_v4.3' --save_dir='unreal_4678_v1v2v3_cambal_3000' --save_step 15  --num_pids 3000 --cam_bal True --img_per_person 40
 ```
 
-We also provide the trained weights of this experiment in [BaiduPan]() and [Beihang Netdisk]().  
+We also provide the trained weights of this experiment in the data download links above.
 
 Configs:
 When ``trainset_name`` is unreal, ``datasets`` contains the directories of unreal data that will be used. ``num_pids`` is the number of humans and ``cam_bal`` denotes the camera balanced sampling strategy is adopted. ``img_per_person`` controls the size of the training set.
@@ -120,13 +120,15 @@ python test_model.py test --testset_name market --save_dir='market_unrealpretrai
 
 We use joint visual and temporal consistency (JVTC) framework. CBN is also implemented in JVTC.
 
-**1. Clone this repo and change directory to CBN**
+**1. Clone this repo and change directory to JVTC**
+
 ```bash
-git clone https://github.com/FlyHighest/UnrealPerson
+git clone https://github.com/FlyHighest/UnrealPerson.git
 cd UnrealPerson/JVTC
 ```
 
 **2. Prepare data**
+
 Basicly, it is the same as CBN, except for an extra directory ``bounding_box_train_camstyle_merge``, which can be downloaded from [ECN](https://github.com/zhunzhong07/ECN). We suggest using ``ln -s`` to save disk space. 
 <pre>
 .
@@ -140,6 +142,7 @@ Basicly, it is the same as CBN, except for an extra directory ``bounding_box_tra
 </pre>
 
 **3. Install the required packages**
+
 ```console
 pip install -r ../CBN/requirements.txt
 ```
