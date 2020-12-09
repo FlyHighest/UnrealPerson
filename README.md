@@ -1,5 +1,5 @@
 # UnrealPerson: An Adaptive Pipeline for Costless Person Re-identification
-In our paper ([arxiv]()), we propose a novel pipeline, UnrealPerson, that decreases the costs in both the training and deployment stages of person ReID. 
+In our paper ([arxiv](https://arxiv.org/abs/2012.04268)), we propose a novel pipeline, UnrealPerson, that decreases the costs in both the training and deployment stages of person ReID. 
 We develop an automatic data synthesis toolkit and use synthesized data in mutiple ReID tasks, including (i) Direct transfer, (ii) Unsupervised domain adaptation, and (iii) Supervised fine-tuning. 
  
 The repo contains the **synthesized** **data** we use in the paper and presents examples of how to use synthesized data in various down-stream tasks to boost the ReID performance.
@@ -175,8 +175,18 @@ More details can be seen in [JVTC](https://github.com/ljn114514/JVTC).
 
 ## Cite our paper
 
-If you find our work useful, please kindly cite:
+If you find our work useful in your research, please kindly cite:
 
+```
+@misc{zhang2020unrealperson,
+      title={UnrealPerson: An Adaptive Pipeline towards Costless Person Re-identification}, 
+      author={Tianyu Zhang and Lingxi Xie and Longhui Wei and Zijie Zhuang and Yongfei Zhang and Bo Li and Qi Tian},
+      year={2020},
+      eprint={2012.04268},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}
+```
 
 If you have any questions about the data or paper, please leave an issue or contact me: 
 zhangtianyu@buaa.edu.cn
