@@ -18,7 +18,7 @@ The codes are based on [CBN](https://github.com/automan000/Camera-based-Person-R
 
 ## Data Details
 
-Our synthesized data (named Unreal in the paper) is generated with Makehuman, Mixamo, and UnrealEngine 4. We provide 1.2M images of 4.8K identities, captured from 4 unreal environments. 
+Our synthesized data (named Unreal in the paper) is generated with Makehuman, Mixamo, and UnrealEngine 4. We provide 1.2M images of 6.8K identities, captured from 4 unreal environments. 
 
 Beihang Netdisk: [Download Link](https://bhpan.buaa.edu.cn:443/link/BD6502DF5A2A2434BC5FC62793F80F96) valid until: 2024-01-01
 
