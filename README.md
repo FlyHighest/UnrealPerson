@@ -32,7 +32,7 @@ _X_ represents the ID of unreal environment; _Y_ is the version of human models;
 We provide three types of human models: version 1 is the basic type; version 2 contains accessories, like handbags, hats and backpacks; version 3 contains hard samples with similar global appearance. 
 Four virtual environments are used in our synthesized data: the first three are city environments and the last one is a supermarket.
 Note that cameras under different virtual environments may have the same label and persons of different versions may also have the same identity label. 
-Therefore, images with the same (Y, P) belong the the same virtual person; images with the same (X, D) belong the same camera. 
+Therefore, images with the same (Y, P) belong to the same virtual person; images with the same (X, D) belong to the same camera. 
  
 The data synthesis toolkit, including Makehuman plugin, several UE4 blueprints and data annotation scripts, will be published soon. 
  
