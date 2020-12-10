@@ -1,5 +1,5 @@
 # UnrealPerson: An Adaptive Pipeline for Costless Person Re-identification
-In our paper ([arxiv](https://arxiv.org/abs/2012.04268)), we propose a novel pipeline, UnrealPerson, that decreases the costs in both the training and deployment stages of person ReID. 
+In our paper ([arxiv](https://arxiv.org/abs/2012.04268v2)), we propose a novel pipeline, UnrealPerson, that decreases the costs in both the training and deployment stages of person ReID. 
 We develop an automatic data synthesis toolkit and use synthesized data in mutiple ReID tasks, including (i) Direct transfer, (ii) Unsupervised domain adaptation, and (iii) Supervised fine-tuning. 
  
 The repo contains the **synthesized** **data** we use in the paper and presents examples of how to use synthesized data in various down-stream tasks to boost the ReID performance.
