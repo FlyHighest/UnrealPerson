@@ -157,9 +157,9 @@ pip install -r ../CBN/requirements.txt
 (Unreal to MSMT)
 
 ```console
-python train_cbn.py --gpu_ids 0,1,2 --src unreal --tar msmt --num_cam 6 --name unreal2msmt --max_ep 60
+python train_cbn.py --gpu_ids 0,1,2 --src unreal --tar msmt --num_cam 15 --name unreal2msmt --max_ep 60
 
-python test_cbn.py --gpu_ids 1 --weights snapshot/unreal2msmt/resnet50_unreal2market_epoch60_cbn.pth --name 'unreal2msmt' --tar market --num_cam 6 --joint True 
+python test_cbn.py --gpu_ids 1 --weights snapshot/unreal2msmt/resnet50_unreal2msmt_epoch60_cbn.pth --name 'unreal2msmt' --tar msmt --num_cam 15 --joint True 
 ```
 
 The unreal data used in JVTC is defined in list_unreal/list_unreal_train.txt. The CBN codes support generating this file (see CBN/io_stream/datasets/unreal.py). 
@@ -178,13 +178,11 @@ More details can be seen in [JVTC](https://github.com/ljn114514/JVTC).
 If you find our work useful in your research, please kindly cite:
 
 ```
-@misc{zhang2020unrealperson,
+@inproceedings{zhang2021unrealperson,
       title={UnrealPerson: An Adaptive Pipeline towards Costless Person Re-identification}, 
       author={Tianyu Zhang and Lingxi Xie and Longhui Wei and Zijie Zhuang and Yongfei Zhang and Bo Li and Qi Tian},
-      year={2020},
-      eprint={2012.04268},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV}
+      year={2021},
+      booktitle={The IEEE Conference on Computer Vision and Pattern Recognition (CVPR)}
 }
 ```
 
