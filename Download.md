@@ -6,6 +6,8 @@ Beihang Netdisk: [Download Link](https://bhpan.buaa.edu.cn:443/link/BD6502DF5A2A
 
 BaiduPan: [Download Link](https://pan.baidu.com/s/1P_UKdhmuDvJNQHuO81ifww) password: abcd
 
+Google Drive: [Download Link](https://drive.google.com/drive/folders/1sQHVBWvDwn-SVJtMqZDpk2HK9g9tnZ1I?usp=sharing)
+
 The image path is formulated as: unreal_v{X}.{Y}/images/{P}\_c{D}_{F}.jpg,
  for example, unreal_v3.1/images/333_c001_78.jpg.
  
